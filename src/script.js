@@ -56,12 +56,7 @@ function make_table(id) {
 	document.querySelector('.lds-ripple').style.display = 'none'
 	document.querySelector('thead tr').innerHTML = head
 	document.querySelector('tbody').innerHTML = body
-	document.querySelector('#title').innerHTML =''
-	new TypeIt('#title', {
-	  strings: id
-	}).go();
-
-
+	document.querySelector('#title').innerHTML = id 
   }).catch(e => alert(e.message))
 }
 
