@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "back-end": "json-server --watch ./database/db.json --port 3004",
+        "back-end": "node server.js",
         "backend": "node server",
         "serv": "browser-sync start --server --files index.html",
         "start": "concurrently --kill-others \"npm run serv\" \"npm run back-end\" \"npm run backend\""

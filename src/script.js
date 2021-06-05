@@ -10,7 +10,7 @@ let perPage = 5
 
 function make_table(id) {
 	form_Data.innerHTML = ''
-  fetch(`http://localhost:3004/${id}`).then(res => res.json()).then(res => {
+  fetch(`http://localhost:3000/${id}`).then(res => res.json()).then(res => {
 
 	let head = '<th scope="col">#</th>'
 	let body = ''
