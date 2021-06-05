@@ -135,6 +135,7 @@ const urlCorrection = function (text) {
 items.forEach((item) => {
   item.addEventListener('click', e => {
 	e.preventDefault()
+	currentPage = item.innerText.toLowerCase()
 	location.hash = urlCorrection(item.innerText)
 	if (item.innerText === 'Dashboard') {
 	  make_table('Orders')
