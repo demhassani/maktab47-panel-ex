@@ -1,34 +1,151 @@
 {
   "customers": [
     {
-      "Name": "ali",
-      "Username": "aliii",
-      "email": "ali@gmail.com",
-      "Password": "1Weg3"
+      "id": "1",
+      "name": "Tricia Kulas",
+      "phone": "1-971-444-9133 x1610",
+      "email": "Elwin.Johns68@hotmail.com",
+      "avatar": "avatar 1"
     },
     {
-      "Name": "ali",
-      "Username": "aliii",
-      "email": "ali@gmail.com",
-      "Password": "1Weg3"
+      "id": "2",
+      "name": "Ernest Goldner",
+      "phone": "(576) 908-8437 x3067",
+      "email": "Anabel.OKeefe84@hotmail.com",
+      "avatar": "avatar 2"
     },
     {
-      "Name": "ali",
-      "Username": "aliii",
-      "email": "ali@gmail.com",
-      "Password": "1Weg3"
+      "id": "3",
+      "name": "Shari Hane IV",
+      "phone": "(898) 457-7376",
+      "email": "Yasmin_Feeney@yahoo.com",
+      "avatar": "avatar 3"
     },
     {
-      "Name": "ali",
-      "Username": "aliii",
-      "email": "ali@gmail.com",
-      "Password": "1Weg3"
+      "id": "4",
+      "name": "Horace Harvey V",
+      "phone": "1-559-392-1075 x7165",
+      "email": "Isai73@hotmail.com",
+      "avatar": "avatar 4"
     },
     {
-      "Name": "ali",
-      "Username": "aliii",
-      "email": "ali@gmail.com",
-      "Password": "1Weg3"
+      "id": "5",
+      "name": "Marc Friesen",
+      "phone": "1-926-768-2065",
+      "email": "Jordi.VonRueden@gmail.com",
+      "avatar": "avatar 5"
+    },
+    {
+      "id": "6",
+      "name": "Ms. Ismael Murray",
+      "phone": "603.576.7975 x0399",
+      "email": "Fletcher_Jones39@hotmail.com",
+      "avatar": "avatar 6"
+    },
+    {
+      "id": "7",
+      "name": "Connie Rau",
+      "phone": "339.787.9289",
+      "email": "Dewayne_Crona79@yahoo.com",
+      "avatar": "avatar 7"
+    },
+    {
+      "id": "8",
+      "name": "Daryl Schroeder",
+      "phone": "952-493-8577 x046",
+      "email": "Raphael_Botsford94@hotmail.com",
+      "avatar": "avatar 8"
+    },
+    {
+      "id": "9",
+      "name": "Dwight Dickens",
+      "phone": "872.928.0518",
+      "email": "Erika_Flatley48@hotmail.com",
+      "avatar": "avatar 9"
+    },
+    {
+      "id": "10",
+      "name": "Steven Sanford",
+      "phone": "263-267-5001 x4669",
+      "email": "Finn.Lubowitz@hotmail.com",
+      "avatar": "avatar 10"
+    },
+    {
+      "id": "11",
+      "name": "Kimberly Mante",
+      "phone": "411.760.7743 x32003",
+      "email": "Damien.Adams@yahoo.com",
+      "avatar": "avatar 11"
+    },
+    {
+      "id": "12",
+      "name": "Hubert Huels",
+      "phone": "474-404-8709",
+      "email": "Ova_Dickens35@gmail.com",
+      "avatar": "avatar 12"
+    },
+    {
+      "id": "13",
+      "name": "Darryl Bogan",
+      "phone": "850-798-2834",
+      "email": "Rolando.Cummerata@yahoo.com",
+      "avatar": "avatar 13"
+    },
+    {
+      "id": "14",
+      "name": "Jon Nolan",
+      "phone": "1-516-757-7317 x490",
+      "email": "Reid.Wiza@yahoo.com",
+      "avatar": "avatar 14"
+    },
+    {
+      "id": "15",
+      "name": "Spencer Watsica",
+      "phone": "652-762-4321 x3413",
+      "email": "Arno.Aufderhar@gmail.com",
+      "avatar": "avatar 15"
+    },
+    {
+      "id": "16",
+      "name": "Miss Rodney Beatty",
+      "phone": "265.693.8261",
+      "email": "Lelah_Streich73@hotmail.com",
+      "avatar": "avatar 16"
+    },
+    {
+      "id": "17",
+      "name": "April White",
+      "phone": "947.962.0737 x663",
+      "email": "Eva_Sauer80@hotmail.com",
+      "avatar": "avatar 17"
+    },
+    {
+      "id": "18",
+      "name": "Lionel Murphy",
+      "phone": "1-659-825-7670",
+      "email": "Jess.Mante61@hotmail.com",
+      "avatar": "avatar 18"
+    },
+    {
+      "id": "19",
+      "name": "Wilson Zulauf",
+      "phone": "985-306-9103",
+      "email": "Raymundo37@hotmail.com",
+      "avatar": "avatar 19"
+    },
+    {
+      "id": "20",
+      "name": "Salvatore Johnson",
+      "phone": "457-952-9141 x18938",
+      "email": "Maverick85@gmail.com",
+      "avatar": "avatar 20"
+    },
+    {
+      "id": "21",
+      "name": "Paul Miller",
+      "phone": "1-968-209-6873 x389",
+      "email": "Cale65@gmail.com",
+      "avatar": "avatar 21"
     }
   ],
   "products": [

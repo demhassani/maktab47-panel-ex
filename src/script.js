@@ -6,7 +6,7 @@ const title = document.querySelector('#title')
 let numberPages = 1
 let currentPage = 'Orders'
 let numberCurrentPage = 1
-let perPage = 5
+let perPage = 7
 
 function make_table(id) {
 	form_Data.innerHTML = ''
@@ -19,11 +19,19 @@ function make_table(id) {
 		delete obj.id
 	  for (let item in obj) {
 		head += ` <th scope="col">${item}</th>`
-
-			form_Data.innerHTML+=`<div class="mb-3">
+			if(item=='avatar'){
+				form_Data.innerHTML+=`<div class="mb-3">
+				<label for="${item}" class="form-label">${item}</label>
+				<input name='${item}' type="file" class="form-control" id="${item}">
+			  </div>`	
+			}
+			else{
+				form_Data.innerHTML+=`<div class="mb-3">
 			<label for="${item}" class="form-label">${item}</label>
 			<input name='${item}' type="text" class="form-control" id="${item}">
 		  </div>`
+			}
+			
 
 	  }
 	  break
@@ -103,7 +111,7 @@ function gochangeTable(change) {
 }
 
 function paginationFetch(id) {
-  fetch(`http://localhost:3004/${id}`).then(res => res.json()).then(res => {
+  fetch(`http://localhost:3000/${id}`).then(res => res.json()).then(res => {
 	let body = ''
 	// generate body of table
 	let counter = 1
@@ -175,7 +183,7 @@ const handleForm = function(e){
 	const data = new FormData(e.target)
 	const formJSON = Object.fromEntries(data.entries())
 
-fetch(`http://localhost:3004/${title.innerText.split('|')[0]}`,
+fetch(`http://localhost:3000/${title.innerText.split('|')[0]}`,
 {
 	headers: {
 		'Accept': 'application/json',
