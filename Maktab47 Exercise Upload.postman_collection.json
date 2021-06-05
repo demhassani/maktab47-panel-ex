@@ -6,72 +6,125 @@
 	},
 	"item": [
 		{
-			"name": "Upload",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "image",
-							"type": "file",
-							"src": "/C:/Users/Babak/Desktop/Desktop/thumbnail.jpg"
+			"name": "Test Upload",
+			"item": [
+				{
+					"name": "Upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Babak/Desktop/Desktop/thumbnail.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{SERVER}}/upload",
+							"host": [
+								"{{SERVER}}"
+							],
+							"path": [
+								"upload"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{SERVER}}/upload",
-					"host": [
-						"{{SERVER}}"
-					],
-					"path": [
-						"upload"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Download a File",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{SERVER}}/files/:file_id",
-					"host": [
-						"{{SERVER}}"
-					],
-					"path": [
-						"files",
-						":file_id"
-					],
-					"variable": [
-						{
-							"key": "file_id",
-							"value": ""
+				{
+					"name": "List of Files",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SERVER}}/files",
+							"host": [
+								"{{SERVER}}"
+							],
+							"path": [
+								"files"
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Download a File",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SERVER}}/files/:file_id",
+							"host": [
+								"{{SERVER}}"
+							],
+							"path": [
+								"files",
+								":file_id"
+							],
+							"variable": [
+								{
+									"key": "file_id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "List of Files",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{SERVER}}/files",
-					"host": [
-						"{{SERVER}}"
-					],
-					"path": [
-						"files"
-					]
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"surface pro laptop\",\r\n    \"brand\": \"microsoft\",\r\n    \"image\": \"/files/65ddd8b1bbce4d8396b62611147fa1d6\",\r\n    \"price\": \"1500\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SERVER}}/products",
+							"host": [
+								"{{SERVER}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SERVER}}/products",
+							"host": [
+								"{{SERVER}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	],
 	"event": [
