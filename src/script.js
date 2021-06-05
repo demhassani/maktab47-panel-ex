@@ -4,7 +4,7 @@ const form_Data = document.querySelector('.form-data')
 const form = document.querySelector('#createForm')
 const title = document.querySelector('#title')
 let numberPages = 1
-let currentPage = 'Orders'
+let currentPage = location.hash.split('#')[1] || 'Orders'
 let numberCurrentPage = 1
 let perPage = 7
 
@@ -133,7 +133,7 @@ items.forEach((item) => {
 	currentPage = item.innerText.toLowerCase()
 	location.hash = urlCorrection(item.innerText)
 	if (item.innerText === 'Dashboard') {
-	  make_table('Orders')
+	  make_table(currentPage)
 	  return
 	}
 
@@ -159,13 +159,13 @@ if (location.hash) {
 		location.reload()
 	} else {
 	if (item.innerText === 'Dashboard') {
-		make_table(urlCorrection('orders'))
+		make_table(urlCorrection(currentPage))
 	} else
 		make_table(urlCorrection(item.innerText))
 	}
 
 	} else {
-	 make_table('orders')
+	 make_table(currentPage)
 }
 
 modalBtn.onclick=function(){
@@ -188,7 +188,9 @@ fetch(`http://localhost:3000/${title.innerText.split('|')[0]}`,
 	method: "POST",
 	body: JSON.stringify(formJSON, null, 2)
 })
-.then(() => location.reload())
+.then(() => make_table(urlCorrection(currentPage))
+
+)
 }
 
 form.addEventListener('submit',handleForm)
